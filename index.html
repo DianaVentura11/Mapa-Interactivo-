@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de México</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mapa Interactivo de México</h1>
+        <p>Explora información estadística de las entidades federativas</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="controles">
+            <label for="indicador">Selecciona un indicador:</label>
+
+            
+<select id="indicador">
+    <option value="pob">Población total (2020)</option>
+    <option value="pob_fem">Población femenina (2020)</option>
+    <option value="pob_mas">Población masculina (2020)</option>
+    <option value="viv">Viviendas (2020)</option>
+    <option value="pobreza">Población en pobreza (2022)</option>
+    <option value="escolaridad">Grado promedio de escolaridad (2020)</option>
+</select>
+<div class="control-hospitales">
+    <label>
+        <input type="checkbox" id="mostrar-hospitales" checked>
+        Mostrar hospitales 🏥
+    </label>
+</div>
+
+        </section>
+
+        <section class="contenido">
+
+            <div id="mapa"></div>
+
+<section class="leyenda-hospitales">
+    <h3>🏥 Leyenda de hospitales</h3>
+
+    <div class="elemento-leyenda">
+        <span class="marcador-hospital"></span>
+        <span>Hospital o establecimiento de salud</span>
+    </div>
+
+    <div class="elemento-leyenda">
+        <span class="marcador-cluster">25</span>
+        <span>Grupo de hospitales cercanos</span>
+    </div>
+
+    <p>
+        Haz clic en los marcadores para consultar
+        la información de cada establecimiento.
+    </p>
+</section>
+
+
+            <aside id="panel">
+                <h2>Información del estado</h2>
+                <p>Selecciona un estado del mapa para consultar sus datos.</p>
+            </aside>
+
+        </section>
+
+        <section id="leyenda">
+            <h3>Leyenda</h3>
+            <div id="contenido-leyenda"></div>
+        </section>
+
+    </main>
+
+    
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

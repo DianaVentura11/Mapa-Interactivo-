@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #17365d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.controles {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+#mapa {
+    height: 550px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#panel h2 {
+    margin-bottom: 15px;
+    color: #17365d;
+}
+
+#leyenda {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    background: #17365d;
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    #mapa {
+        height: 400px;
+    }
+}
+.control-hospitales {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+}
+
+.control-hospitales label {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.control-hospitales input {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/* DISEÑO GENERAL */
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #1e40af;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* CONTROLES */
+
+select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.control-hospitales {
+    display: inline-block;
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 10px 0;
+}
+
+/* MAPA */
+
+#mapa {
+    height: 550px;
+    width: 100%;
+    border-radius: 14px;
+    border: 2px solid #dbeafe;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    margin-top: 15px;
+}
+
+/* LEYENDA DE HOSPITALES */
+
+.leyenda-hospitales {
+    background-color: white;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.leyenda-hospitales h3 {
+    margin-top: 0;
+}
+
+.elemento-leyenda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.marcador-hospital {
+    width: 14px;
+    height: 14px;
+    background-color: #2563eb;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.marcador-cluster {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #93c5fd;
+    border: 5px solid #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e3a8a;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.leyenda-hospitales p {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* PANELES */
+
+#panel,
+#leyenda {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    #mapa {
+        height: 450px;
+    }
+
+    select {
+        width: 100%;
+    }
+}
