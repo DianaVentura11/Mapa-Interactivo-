@@ -1,0 +1,7 @@
+### Hallazgos del mapa interactivo
+
+Al desarrollar el mapa interactivo se pudo observar que la información sociodemográfica de México presenta diferencias entre las entidades federativas. Al cambiar los indicadores es posible comparar la distribución de la población total, femenina y masculina, así como el número de viviendas, la población en situación de pobreza y el grado promedio de escolaridad.
+
+También se incorporó la ubicación geográfica de hospitales, lo que permite observar cómo se distribuyen estas instituciones en el territorio nacional. Se puede notar que existen zonas con mayor concentración de establecimientos hospitalarios y otras donde se encuentran más dispersos.
+
+Este proyecto permite comprender mejor la utilidad de los Sistemas de Información Geográfica, ya que combina datos estadísticos con información geográfica para facilitar su consulta, comparación e interpretación. Además, demuestra cómo las herramientas web pueden utilizarse para presentar información de una manera más visual e interactiva.
